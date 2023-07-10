@@ -8,8 +8,10 @@ namespace razorweb.Pages;
 
 public class IndexModel : PageModel
 {
+    #pragma warning disable IDE0052
     private readonly ILogger<IndexModel> _logger;
-
+    #pragma warning restore IDE0052
+    
     private readonly MyBlogContext myBlogContext;
     public IndexModel(ILogger<IndexModel> logger, MyBlogContext _myBlogContext)
     {
